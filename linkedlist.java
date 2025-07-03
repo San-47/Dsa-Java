@@ -153,7 +153,7 @@ class LL
 
 
 
-public class Main
+public class linkedlist
 {
 	public static void main(String[] args) 
 	{

@@ -17,11 +17,20 @@ public class Graph{
             arr[r][c]=1;
             arr[c][r]=1;
     }
-        public static void display()
+       public static void display()
 	{
+	    System.out.print("  ");
 	    
-	    for(int i=0;i<4;i++){
-	        for(int j=0;j<4;j++){
+	    for(int k=0;k<v.length;k++)
+	    {
+	        System.out.print(v[k]+" ");
+	    }
+	    System.out.println();
+	    
+	    
+	    for(int i=0;i<v.length;i++){
+	        System.out.print(v[i]+" ");
+	        for(int j=0;j<v.length;j++){
 	            System.out.print(arr[i][j]+" ");
 	        }
 	        System.out.println();

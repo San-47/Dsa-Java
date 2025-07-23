@@ -17,6 +17,23 @@ public class Graph{
             arr[r][c]=1;
             arr[c][r]=1;
     }
+    
+
+public static void degree()
+	{
+	    
+	    for(int i=0;i<v.length;i++){
+	        int de=0;
+	        for(int j=0;j<v.length;j++){
+	            if(arr[i][j]==1)
+	            de++;
+	        }
+	        System.out.println("Degree of "+v[i]+" is "+ de);
+	    }
+	    
+	}
+
+
        public static void display()
 	{
 	    System.out.print("  ");
@@ -42,5 +59,6 @@ public class Graph{
         add(10,30);
         add(15,25);
         display();
+        degree();
     }
 }
